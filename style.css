@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  max-width: 1200px;
+}
+
+header {
+  background-color: #F7F7F9;
+  font-size: 300%;
+}
+
+img {
+  width:20%;
+  height: auto;
+}
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  background-color: #F7EF81;
+}
+
+#navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+
+.hero-banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  font-size: 40px;
+}
+.page-section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: left;
+  display: grid;
+  grid-template-areas:
+  "sec-1 sec-2 sec-2"
+  "sec-3 sec-4 sec-5"
+  "sec-3 sec-6 sec-7"
+  "sec-8 sec-9 sec-9";
+  grid-template-columns: 20% 40% 40%;
+  background-color: #F7F7F9;
+}
+#about {
+  grid-area: sec-1;
+  margin: 10px;
+}
+.biography {
+  grid-area: sec-2;
+}
+#work {
+  grid-area: sec-3;
+  margin: 10px;
+}
+
+#study-guide {
+  grid-area: sec-5;
+}
+
+#blog {
+  grid-area: sec-8;
+  margin: 10px;
+}
+.blogging {
+  grid-area: sec-9;
+}
+#contact {
+text-align: left;
+}
+.subHeading {
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 800px;
+  margin: 50px auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
