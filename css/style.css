@@ -60,25 +60,43 @@ img {
   grid-template-areas:
   "sec-1 sec-2 sec-2"
   "sec-3 sec-4 sec-5"
-  "sec-3 sec-6 sec-7"
+  "sec-3 sec-6 sec-6"
   "sec-8 sec-9 sec-9";
   grid-template-columns: 20% 40% 40%;
   background-color: #F7F7F9;
 }
+
+#herogrid {
+  margin: 10px;
+  background-repeat: no-repeat;
+}
+
 #about {
   grid-area: sec-1;
-  margin: 10px;
 }
 .biography {
   grid-area: sec-2;
 }
 #work {
   grid-area: sec-3;
-  margin: 10px;
+}
+
+#beautiful {
+  grid-area: sec-4;
+  display:flex;
+  background-repeat: no-repeat;
+  background-image: url(../images/beautiful2.png)
+}
+
+#dark {
+  grid-area: sec-5;
+  background-repeat: no-repeat;
+  background-image: url(../images/dark.png);
 }
 
 #study-guide {
   grid-area: sec-5;
+  
 }
 
 #blog {
