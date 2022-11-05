@@ -51,7 +51,7 @@ img {
   padding: 50px;
   font-size: 40px;
 }
-.page-section {
+.page-wrapper {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,8 +60,8 @@ img {
   grid-template-areas:
   "sec-1 sec-2 sec-2"
   "sec-3 sec-4 sec-5"
-  "sec-3 sec-6 sec-6"
-  "sec-8 sec-9 sec-9";
+  "sec-3 sec-6 sec-7"
+  "sec-8 sec-9 sec-10";
   grid-template-columns: 20% 40% 40%;
   background-color: #F7F7F9;
 }
@@ -84,19 +84,40 @@ img {
 #beautiful {
   grid-area: sec-4;
   display:flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
   background-image: url(../images/beautiful2.png)
+}
+
+#beautiful h1 {
+  
 }
 
 #dark {
   grid-area: sec-5;
+  display:flex;
+  justify-content: flex-end;
   background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
   background-image: url(../images/dark.png);
 }
 
-#study-guide {
-  grid-area: sec-5;
-  
+
+
+#fun {
+  grid-area: sec-6;
+  display:flex;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  background-image: url(../images/beautiful2.png)
 }
 
 #blog {
